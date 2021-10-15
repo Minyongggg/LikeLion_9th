@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+        border: 1px solid black;
+        width: 150px;
+        padding: 5px;
+        margin: 10px;
+        text-align: center;
+        font-size: 20px;
+    }
+    #weatherBox {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>도시명을 입력하세요(in English)</h2>
+  <input type="text" name="city" id="city">
+  <button id="submit">search</button>
+
+  <h2>Tomorrow's Weather</h2>
+  <div id="weatherBox">
+  </div>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script type="module" src="./weather.js"></script>
+</body>
+
+</html>

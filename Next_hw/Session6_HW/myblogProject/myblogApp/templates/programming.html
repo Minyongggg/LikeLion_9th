@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postings about Programming</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'programming.css' %}">
+</head>
+<body>
+    <div id="wrap">
+        <div id="top-nav"></div>
+        <div id="main-wrap">
+            <div id="container">
+                <div id="header">
+                    <h1>My Blog</h1>
+                </div>
+                <div id="main">
+                    <h2>Category</h2>
+                    <div>Programming - {{len_postings}} Postings</div>
+                    <ul>
+                        {% for posting in postings %}
+                        <li><a href="{% url 'detail' posting.pk %}">{{posting.title}}</a></li>
+                        {% endfor %}
+                    </ul>
+                    <div id=buttons>
+                        <div id="back">
+                            <a href="{% url 'index' %}">전체 카테고리</a>
+                        </div>
+                        <div id="new">
+                            <a href="{% url 'new' %}">새 글 작성하기</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer">
+                    <h2>자유롭게 글을 남겨보세요!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

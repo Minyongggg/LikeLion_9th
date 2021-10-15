@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css"/>
+    <title>Minyong's Blog</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Welcome to My Blog!</h1>
+        </header>
+        <main>
+            <div id="main-top">
+                <div id="about">
+                    <h2>About me</h2>
+                    <img id="me" src="./img/me.jpg"/>
+                    <ul>
+                        <li>이민용(25세)</li>
+                        <li>고려대학교 사회학과 17학번</li>
+                        <li>멋쟁이 사자처럼 9기</li>
+                        <li>유애나 1~4기 회원</li>
+                    </ul>
+                </div>
+                <div id="tmi">
+                    <h2>TMIs</h2>
+                    <ul id="tmi-list">
+                        <li>저는 제주도에서 왔습니다~</li>
+                        <br/>
+                        <li>IU를 매우 좋아합니다. 콘서트 같이 가실 분 연락주세요~</li>
+                        <br/>
+                        <li>롤 티어는 골드3입니다. 듀오하실 분 연락주세요~</li>
+                        <br/>
+                        <li>자료구조, 이산수학, 논리설계, 계산이론 수강하시는 분 같이들어요! 연락주세요~</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="favorite">
+                <h2>Favorite</h2>
+                <div class="fav">
+                    <img src="./img/iu.jpg" alt="IU"/>
+                    <br/>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=0-q1KafFCLU">Celebrity 뮤비 보러가기!</a>
+                </div>
+                <div class="fav">
+                    <img src="./img/nba.jpg" alt="NBA"/>
+                    <br/>
+                    <a target="_blank" href="https://www.google.com/search?q=nba&sxsrf=ALeKk02LfbkmAu8GG0U8YJKZyHZ0U0J-PQ%3A1616662140981&source=hp&ei=fE5cYLTpOdOnoASK4YuADg&iflsig=AINFCbYAAAAAYFxcjNTySK9GbPkE-6iUJ4yXHyrT_gFm&oq=nba&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyCAgAELEDEIMBMggIABCxAxCDATIICAAQsQMQgwEyCAgAELEDEIMBMggIABCxAxCDATIICAAQsQMQgwEyBAgAEAMyAggAMgIIADoGCCMQJxATOgUIABCxA1CeAVjiAmDGBGgAcAB4AIABgAGIAeUCkgEDMC4zmAEAoAEBqgEHZ3dzLXdpeg&sclient=gws-wiz&ved=0ahUKEwi0l4jlh8vvAhXTE4gKHYrwAuAQ4dUDCAc&uact=5#sie=lg;/g/11jn2_x2b4;3;/m/05jvx;mt;fp;1;;">NBA 일정 보러가기!</a>
+                </div>
+                <div class="fav">
+                    <img src="./img/dumpling.jpg" alt="Dumpling"/>
+                    <br/>
+                    <a target="_blank" href="https://www.google.com/search?q=%EB%A7%8C%EB%91%90+%EA%B3%A0%ED%99%94%EC%A7%88&tbm=isch&ved=2ahUKEwjJ_eL9h8vvAhVmfHAKHdJQBOEQ2-cCegQIABAA&oq=%EB%A7%8C%EB%91%90+%EA%B3%A0%ED%99%94%EC%A7%88&gs_lcp=CgNpbWcQAzICCAA6BggAEAUQHjoGCAAQCBAeUOYaWJYgYKwhaAJwAHgCgAGVAYgBlQeSAQMwLjiYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=sE5cYMnlLub4wQPSoZGIDg&bih=698&biw=1536">더 많은 만두 사진 보러가기!</a>
+                </div>
+            </div>
+            <div id="form">
+                  <form method="GET">
+                    <h3 id="form-title">혹시 저랑 취향이 겹치시나요?</h3>
+                    <br/>
+                    <label for="userid">
+                        <span>아이디 입력</span>
+                        <br/>
+                        <input type="text" name="userid" id="userid" /> <!--value는 default-->
+                    <br/>    
+                    <br/>
+                    <label for="userpw">
+                        <span>패스워드 입력</span>
+                        <br/>
+                        <input type="password" id="userpw" /> 
+                    <br/>
+                    <br/>
+                    <label for="gender1">
+                        <span>성별</span>
+                        <br/>
+                        <input type="radio" id="gender1" />남      
+                        <input type="radio" id="gender2" />여            
+                    <br/>
+                    <br/>
+                    <label>
+                        <span>겹치는 취향</span>
+                        <br/>
+                        <input type="checkbox" id="s1"/>아이유
+                        <br/>
+                        <input type="checkbox" id="s2"/>NBA
+                        <br/>
+                        <input type="checkbox" id="s3"/>만두
+                        <br/>
+                        <input type="checkbox" id="s4"/>하나도 없음
+                    <br/>
+                    <br/>
+                    <label for="img">
+                        <span>아이유 짤 나눔해주세요!</span>
+                        <br/>
+                        <input type="file" id="img"/>
+                    <br/>
+                    <br/>
+                    <label for="ta">
+                        <span>하고싶은 말</span>
+                        <br/>
+                        <input type="textarea" id="ta">
+                    <br/>
+                    <br/>
+                    <label for="submit">
+                        <input type="submit" value="다 썼어요!" id="submit"/>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>엉망이네요! 감사합니다!ㅎㅎ</p>
+        </footer>
+    </div>
+</body>
+</html>

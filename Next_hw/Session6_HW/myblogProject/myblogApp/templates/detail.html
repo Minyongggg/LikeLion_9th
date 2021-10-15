@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'detail.css' %}">
+</head>
+<body>
+    <div id="wrap">
+        <div id="top-nav"></div>
+        <div id="main-wrap">
+            <div id="container">
+                <div id="header">
+                    <h1>My Blog</h1>
+                </div>
+                <div id="main">
+                    <div id="posting">
+                        <table>
+                            <tr>
+                                <td class="row0 col0">글 제목</td>
+                                <td class="row0 col1">{{posting.title}}</td>
+                            </tr>
+                            <tr>
+                                <td class="row1 col0">카테고리</td>
+                                <td class="row1 col1">{{posting.category}}</td>
+                            </tr>
+                            <tr>
+                                <td class="row2 col0">작성일자</td>
+                                <td class="row2 col1">{{posting.writetime}}</td>
+                            </tr>
+                        </table>
+                        <div id="content">{{posting.content}}</div>
+                    </div>
+                    <div id="back">
+                        {% if posting.category == 'Movie' %}
+                        <a href="{% url 'movie' %}">목록으로 돌아가기</a>
+                        {% elif posting.category == 'Drama' %}
+                        <a href="{% url 'drama' %}">목록으로 돌아가기</a>
+                        {% elif posting.category == 'Programming' %}
+                        <a href="{% url 'programming' %}">목록으로 돌아가기</a>
+                        {% endif %}
+                    </div>
+                </div>
+                <div id="footer">
+                    <h2>자유롭게 글을 남겨보세요!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

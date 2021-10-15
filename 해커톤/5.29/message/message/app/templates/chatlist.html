@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'chatlist.css' %}">
+{% endblock css %}
+
+{% block wrap %}
+<div>
+    <h1>자료구조 수강친구</h1>
+    <ul>
+        {% for friend in friends %}
+        {% for person in friend.person.all %}
+        <a href="{% url 'makeroom' friend.pk %}">
+            <div class="friend-bar">
+                <img class="profile-img" src="{{ person.profile_img.url }}">
+                <div>
+                    <li>{{ person.nickname }}</li>
+                    <p>새로운 메시지입니다.</p>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+        {% endfor %}
+    </ul>
+</div>
+{% endblock wrap %}

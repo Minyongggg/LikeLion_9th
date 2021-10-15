@@ -1,0 +1,34 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #eeeeee;
+}
+
+.wrap {
+    max-width: 400px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #ababab;
+    position: relative;
+}
+
+.title {
+    height: 100px;
+    background-color: blue;
+}
+
+.container {
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+    bottom: 0;
+}

@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 50px;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+
+header {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header img {
+    margin: 20px;
+    width: 170px;
+}
+
+header div {
+    font-size: 60px;
+    padding-left: 40px;
+}
+
+
+.content {
+    width: 33%;
+    height: 33%;
+    border: 2px white solid;
+}
+
+#container {
+    width: 1200px;
+    border: 1px black solid;
+}
+
+#profile {
+    height: 1000px;
+}
+
+#profile img {
+    width: 1300px;
+    margin-left: 45px;
+}
+
+#profile1 {
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+#about {
+    height: 400px;
+    padding-left: 30px;
+    line-height: 75px;
+}
+
+#profile-button {
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+#profile-button div {
+    border: 1px rgb(129, 129, 129) solid;
+    border-radius: 15px;
+    margin-left: 15px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile-button img {
+    width: 120px;
+    border: 1px rgb(129, 129, 129) solid;
+    border-radius: 15px;    
+    margin: 15px;
+    height: 120px;
+}
+
+#menu-bar {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#menu-bar img {
+    width: 100px;
+}
+
+#menu-bar a {
+    text-align: center;
+}
+
+#contents {
+    height: 1190px;
+}
+
+#foot-menu-bar {
+    height: 170px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foot-menu {
+    width: 100px;
+}
+
+.line {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#content2 {
+    width: 50%;
+    border: white 10px solid;
+    border-radius: 30px;
+}
+
+#contents3 {
+    height: 1190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content3 {
+    width: 600px;
+    height: 600px;
+}

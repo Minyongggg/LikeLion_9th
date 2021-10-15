@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="new.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 class="title">안녕 난 타이틀</h1>
+    <h2 class="title2">자바스크립트는 근본이 없나요?</h2>
+    <button>그렇다면,</button>
+    <script>
+        const title = document.querySelector(".title");
+        const title2 = document.querySelector(".title2");
+        const button = document.querySelector("button");
+
+        // title.addEventListener("mouseover", function (event) {
+        //     title.classList.add("red");
+        // })
+
+        // title.addEventListener("mouseout", function (event) {
+        //     title.classList.remove("red");
+        // })
+
+        const onMouseOver = (event) => (event.target.style.color = "red");
+        title.addEventListener("mouseover", onMouseOver);
+        
+        const onMouseOut = (event) => (event.target.style.color = "black");
+        title.addEventListener("mouseout", onMouseOut);
+
+        button.addEventListener("click", function (event) {
+            title2.textContent = "한주님에게 TS를 배워보아요"
+        })
+
+
+    </script>
+    
+</body>
+</html>
